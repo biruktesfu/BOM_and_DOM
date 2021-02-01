@@ -14,7 +14,7 @@ form.addEventListener('submit', addNewTask);
 // Clear All Tasks
 clearBtn.addEventListener('click', clearAllTasks);
 //   Filter Task 
-filter.addEventListener('keyup', filterTasks);
+filter.addEventListener('keydown', filterTasks);
 // Remove task event [event delegation]
 taskList.addEventListener('click', removeTask);
 // Event Listener for reload 
@@ -81,9 +81,18 @@ function clearAllTasks() {
 
 // Filter tasks function definition 
 function filterTasks(e) {
-
-    var input = taskInput.value;
     
+    var item = document.getElementById("searchInput").value;
+    var arrayList = document.querySelectorAll("li.collection-item");
+
+    for(let i = 0; i < arrayList.length; i++){
+        let item1 = arrayList[i];
+        let p = item1.textContent;
+        if(p==item1){
+            dis = document.getElementById("searchresult")
+        }
+    }
+
     /*  
     Instruction for Handling the Search/filter 
     
