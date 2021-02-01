@@ -82,6 +82,7 @@ function clearAllTasks() {
 // Filter tasks function definition 
 function filterTasks(e) {
 
+    var input = taskInput.value;
     
     /*  
     Instruction for Handling the Search/filter 
