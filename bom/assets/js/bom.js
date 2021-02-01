@@ -1,4 +1,5 @@
-document.getElementById(".collection").innerHTML = window.location.href;
+
+
 /*  
 Here is the exercise on working on the remaining bom method 
 
